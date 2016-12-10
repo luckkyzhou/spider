@@ -1,6 +1,5 @@
 # coding=utf-8
 import requests
-from bs4 import BeautifulSoup
 import re
 
 def login(no,password): #登录函数
@@ -29,7 +28,6 @@ length = len(spiderFirst)
 spiderFirstList = []
 for i in range(0,length-1):
     spiderFirstList.append('http://pjb.ecust.edu.cn/pingce/pg.php'+spiderFirst[i])
-    print("1")
 print(spiderFirstList)
 
 def getCookies(no,password):
